@@ -1,5 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Layout from './components/layout/Layout';
 import Loader from './components/ui/Loader';
 
@@ -12,25 +13,35 @@ const BeyondSafari = lazy(() => import('./pages/BeyondSafari'));
 const KunoCheetahSafariPackage = lazy(() => import('./pages/KunoCheetahSafariPackage'));
 const BigCatSafariPackage = lazy(() => import('./pages/BigCatSafariPackage'));
 const PhotographyPackage = lazy(() => import('./pages/PhotographyPackage'));
+const ImageTest = lazy(() => import('./components/ui/ImageTest'));
+const SimpleImageTest = lazy(() => import('./components/ui/SimpleImageTest'));
+const SingleImageTest = lazy(() => import('./components/ui/SingleImageTest'));
+const BasicTest = lazy(() => import('./components/ui/BasicTest'));
 
 function App() {
   return (
-    <Router>
-      <Layout>
-        <Suspense fallback={<Loader />}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/packages" element={<Packages />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/beyond-safari" element={<BeyondSafari />} />  
-            <Route path="/package/kuno-cheetah-safari-package" element={<KunoCheetahSafariPackage />} />
+    <HelmetProvider>
+      <Router>
+        <Layout>
+          <Suspense fallback={<Loader />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/packages" element={<Packages />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/beyond-safari" element={<BeyondSafari />} />  
+                          <Route path="/package/kuno-cheetah-safari-package" element={<KunoCheetahSafariPackage />} />
             <Route path="/package/big-cat-safari-package" element={<BigCatSafariPackage />} />
             <Route path="/package/photography-package" element={<PhotographyPackage />} />
-          </Routes>
-        </Suspense>
-      </Layout>
-    </Router>
+            <Route path="/image-test" element={<ImageTest />} />
+            <Route path="/simple-image-test" element={<SimpleImageTest />} />
+            <Route path="/single-image-test" element={<SingleImageTest />} />
+            <Route path="/basic-test" element={<BasicTest />} />
+            </Routes>
+          </Suspense>
+        </Layout>
+      </Router>
+    </HelmetProvider>
   );
 }
 

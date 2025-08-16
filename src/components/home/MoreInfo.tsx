@@ -1,5 +1,7 @@
 
 
+import ResponsiveImage from '../ui/ResponsiveImage';
+
 const MoreInfo = () => {
   return (
     <section className="flex flex-col gap-16 pt-20 pb-20 lg:py-100 xl:flex-row border-0 border-spacing-0">
@@ -21,11 +23,11 @@ const MoreInfo = () => {
 
       {/* Image Section */}
       <div className="flex flex-1 items-center justify-center">
-        <img
-          src="src/public/more_info.jpg"
-          alt="Kuno National Park"
-         
+        <ResponsiveImage
+          src="/more_info.jpg"
+          alt="Kuno National Park Wildlife"
           className="rounded-tl-3xl rounded-bl-3xl shadow-lg object-cover w-full"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
         />
       </div>
     </section>

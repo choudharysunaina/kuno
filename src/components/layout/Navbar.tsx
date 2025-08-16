@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ResponsiveImage from '../ui/ResponsiveImage';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,9 +70,12 @@ const Navbar = () => {
       <div className="container flex items-center justify-between">
 
         <NavLink to="/" className="text-2xl font-bold text-primary-600 flex items-center space-x-2">
-            <img src="src/public/black_logo.png" alt="logo"  className="w-12 h-auto" // Set width (w-12 = 3rem), adjust as needed
-        style={{ maxHeight: '48px' }} // Optional: limit max height
- />
+            <img 
+              src="/black_logo.png" 
+              alt="Kuno National Park Logo"  
+              className="w-12 h-auto" 
+              style={{ maxHeight: '48px' }}
+            />
           
         </NavLink>
 
