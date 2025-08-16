@@ -22,8 +22,8 @@ const Home = () => {
         title="Home"
         description="Experience the thrill of spotting wild cheetahs, leopards, and diverse wildlife in Kuno National Park. Book your safari adventure today with expert guides and customized packages."
         keywords="Kuno National Park, Cheetah Safari, Wildlife Safari, Madhya Pradesh, India, Safari Packages, Wildlife Photography, Conservation"
-        canonical="https://kunosafari.com"
-        ogImage="/cheetah.jpg"
+        canonical="https://choudharysunaina.github.io/kuno/"
+        ogImage="/kuno/cheetah.jpg"
         ogType="website"
       />
       <HeroSection />

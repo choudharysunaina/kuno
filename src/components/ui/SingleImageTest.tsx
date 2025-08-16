@@ -12,7 +12,7 @@ const SingleImageTest = () => {
         <div className="mb-6">
           <h3 className="text-sm font-mono mb-2 text-gray-600">Regular img tag:</h3>
           <img
-            src="/cheetah.jpg"
+            src="/kuno/cheetah.jpg"
             alt="Cheetah Test"
             className="w-full h-48 object-cover rounded"
             onLoad={() => console.log('✅ Regular img loaded successfully')}

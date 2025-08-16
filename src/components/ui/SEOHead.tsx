@@ -19,7 +19,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   description,
   keywords = 'Kuno National Park, Cheetah Safari, Wildlife Safari, Madhya Pradesh, India, Wildlife Conservation, Safari Packages, Photography Safari',
   canonical,
-  ogImage = '/cheetah.jpg',
+  ogImage = '/kuno/cheetah.jpg',
   ogType = 'website',
   twitterCard = 'summary_large_image',
   structuredData,
@@ -34,11 +34,11 @@ const SEOHead: React.FC<SEOHeadProps> = ({
     "@type": "TouristDestination",
     "name": "Kuno National Park",
     "description": "Experience the thrill of spotting wild cheetahs, leopards, and diverse wildlife in India's premier national park.",
-    "url": "https://kunosafari.com",
+    "url": "https://choudharysunaina.github.io/kuno/",
     "image": [
-      "https://kunosafari.com/cheetah.jpg",
-      "https://kunosafari.com/leopard.jpg",
-      "https://kunosafari.com/wildlife.jpg"
+      "https://choudharysunaina.github.io/kuno/cheetah.jpg",
+      "https://choudharysunaina.github.io/kuno/leopard.jpg",
+      "https://choudharysunaina.github.io/kuno/wildlife.jpg"
     ],
     "address": {
       "@type": "PostalAddress",
@@ -90,7 +90,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <meta property="og:description" content={fullDescription} />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonical || window.location.href} />
-      <meta property="og:image" content={ogImage.startsWith('http') ? ogImage : `https://kunosafari.com${ogImage}`} />
+      <meta property="og:image" content={ogImage.startsWith('http') ? ogImage : `https://choudharysunaina.github.io${ogImage}`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="Kuno National Park Safari" />
@@ -100,7 +100,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <meta name="twitter:card" content={twitterCard} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={fullDescription} />
-      <meta name="twitter:image" content={ogImage.startsWith('http') ? ogImage : `https://kunosafari.com${ogImage}`} />
+      <meta name="twitter:image" content={ogImage.startsWith('http') ? ogImage : `https://choudharysunaina.github.io${ogImage}`} />
       <meta name="twitter:site" content="@kunosafari" />
       
       {/* Additional SEO Meta Tags */}

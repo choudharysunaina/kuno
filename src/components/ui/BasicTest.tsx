@@ -9,7 +9,7 @@ const BasicTest = () => {
         <div>
           <h2 className="text-lg font-semibold mb-2">Test 1: Basic img tag</h2>
           <img 
-            src="/cheetah.jpg" 
+            src="/kuno/cheetah.jpg" 
             alt="Cheetah" 
             className="w-64 h-48 object-cover rounded"
           />
@@ -18,7 +18,7 @@ const BasicTest = () => {
         <div>
           <h2 className="text-lg font-semibold mb-2">Test 2: Another image</h2>
           <img 
-            src="/black_logo.png" 
+            src="/kuno/black_logo.png" 
             alt="Logo" 
             className="w-32 h-32 object-contain"
           />
@@ -27,7 +27,7 @@ const BasicTest = () => {
         <div>
           <h2 className="text-lg font-semibold mb-2">Test 3: GIF image</h2>
           <img 
-            src="/home_background_74.gif" 
+            src="/kuno/home_background_74.gif" 
             alt="Background" 
             className="w-64 h-48 object-cover rounded"
           />
@@ -36,7 +36,7 @@ const BasicTest = () => {
         <div>
           <h2 className="text-lg font-semibold mb-2">Test 4: Gallery image</h2>
           <img 
-            src="/GALLERY/bear.jpg" 
+            src="/kuno/GALLERY/bear.jpg" 
             alt="Bear" 
             className="w-64 h-48 object-cover rounded"
           />

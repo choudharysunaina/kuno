@@ -23,7 +23,7 @@ const MomentsSection = () => {
           {/* Image Column */}
           <div className="flex-[3] w-full max-w-5xl relative">
             <ResponsiveImage
-            src="/overlay1.jpg" // Place your image in public/ and use the correct path
+            src="/kuno/overlay1.jpg" // Place your image in public/ and use the correct path
               alt="Kuno National Park Moment"
               className="w-full h-[450px] object-cover shadow-lg"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 800px"
@@ -95,7 +95,7 @@ const MomentsSection = () => {
   {/* Image Column */}
   <div className="flex-[3] w-full max-w-5xl relative">
     <ResponsiveImage
-      src="/overlay2.jpg" // Place your image in public/ and use the correct path
+              src="/kuno/overlay2.jpg" // Place your image in public/ and use the correct path
       alt="Kuno National Park Moment"
       className="w-full h-[450px] object-cover shadow-lg"
       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 800px"

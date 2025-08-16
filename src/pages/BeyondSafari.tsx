@@ -49,8 +49,8 @@ const BeyondSafari = () => (
       title="Beyond Safari - Wildlife Conservation & Community"
       description="Discover our wildlife rescue initiatives, community education programs, and conservation efforts at Kuno National Park. Learn about our groundbreaking moments and conservation success stories."
       keywords="Wildlife Conservation, Community Education, Wildlife Rescue, Kuno National Park, Conservation Awareness, Forest Department, Wildlife Rehabilitation"
-      canonical="https://kunosafari.com/beyond-safari"
-      ogImage="/more_info.jpg"
+              canonical="https://choudharysunaina.github.io/kuno/beyond-safari"
+              ogImage="/kuno/more_info.jpg"
       ogType="article"
     />
     <main className="bg-neutral-50">
@@ -74,7 +74,7 @@ const BeyondSafari = () => (
           At Kuno Cheetah Safari by Finding Fauna, we blend adventure with purpose—celebrating the beauty of the wild, protecting wildlife, uplifting communities, and driving real impact.
         </motion.p>
         <ResponsiveImage
-          src="/more_info.jpg"
+          src="/kuno/more_info.jpg"
           alt="Wildlife Conservation at Kuno National Park"
           className="mx-auto mt-10 rounded-lg shadow-lg w-full max-w-5xl object-cover"
           priority={true}

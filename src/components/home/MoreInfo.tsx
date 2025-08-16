@@ -24,7 +24,7 @@ const MoreInfo = () => {
       {/* Image Section */}
       <div className="flex flex-1 items-center justify-center">
         <ResponsiveImage
-          src="/more_info.jpg"
+          src="/kuno/more_info.jpg"
           alt="Kuno National Park Wildlife"
           className="rounded-tl-3xl rounded-bl-3xl shadow-lg object-cover w-full"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"

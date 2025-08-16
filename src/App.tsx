@@ -21,7 +21,7 @@ const BasicTest = lazy(() => import('./components/ui/BasicTest'));
 function App() {
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename="/kuno">
         <Layout>
           <Suspense fallback={<Loader />}>
             <Routes>
