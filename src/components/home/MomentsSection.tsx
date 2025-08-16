@@ -6,11 +6,11 @@ import ResponsiveImage from '../ui/ResponsiveImage';
 const MomentsSection = () => {
 
   const images = [
-    '/cheetah.jpg',
-    '/leopard.jpg',
-    '/hyena.jpg',
-    '/cat.jpg',
-    '/bear.jpg',
+    '/kuno/cheetah.jpg',
+    '/kuno/leopard.jpg',
+    '/kuno/hyena.jpg',
+    '/kuno/cat.jpg',
+    '/kuno/bear.jpg',
   ];
 
   

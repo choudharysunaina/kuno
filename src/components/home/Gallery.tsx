@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import ResponsiveImage from '../ui/ResponsiveImage';
 
 const images = [
-  '/GALLERY/bear.jpg',
-  '/GALLERY/cat.jpg',
-  '/GALLERY/cheetah.jpg',
-  '/GALLERY/COUPLE.jpg',
-  '/GALLERY/FAMILY.jpg',
-   '/GALLERY/feature_1.jpg',
-  '/GALLERY/cheetah.jpg',
-    '/GALLERY/cheetah.jpg',
-    '/GALLERY/cheetah.jpg'
+      '/kuno/GALLERY/bear.jpg',
+    '/kuno/GALLERY/cat.jpg',
+    '/kuno/GALLERY/cheetah.jpg',
+    '/kuno/GALLERY/COUPLE.jpg',
+    '/kuno/GALLERY/FAMILY.jpg',
+       '/kuno/GALLERY/feature_1.jpg',
+    '/kuno/GALLERY/cheetah.jpg',
+    '/kuno/GALLERY/cheetah.jpg',
+    '/kuno/GALLERY/cheetah.jpg'
   // Add more images with different aspect ratios and sizes in your public folder
 ];
 

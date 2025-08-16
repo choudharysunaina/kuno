@@ -11,12 +11,12 @@ const highlights = [
   {
     title: "Educating Local Communities",
     description: "To protect wildlife, we engage with communities near Kuno National Park, educating them on safe animal interactions, the importance of each species, and dispelling harmful myths. This awareness fosters understanding, reduces fear, and encourages peaceful coexistence with wildlife.",
-    image: "/Educating_local.jpg",
+            image: "/kuno/Educating_local.jpg",
   },
   {
     title: "Awareness Sessions with Forest Department",
     description: "We support the Madhya Pradesh Forest Department by conducting awareness and training sessions for students, forest guards, interns, and villagers. These sessions cover wildlife conservation, safe response to animal encounters, live rescue demos, and discussions on forest laws and habitat protection.",
-    image: "/awareness_sessions.jpg",
+            image: "/kuno/awareness_sessions.jpg",
   },
 ];
 
@@ -24,22 +24,22 @@ const stories = [
   {
     title: "Cheetahs Return to India: A Historic First Glimpse",
     description: "We proudly captured India's first wild cheetah photos—a milestone in conservation showcasing these majestic animals in their natural home.",
-    image: "/cheetah.jpg",
+            image: "/kuno/cheetah.jpg",
   },
   {
     title: "Rare Melanistic Indian Gray Wolf Puppies Spotted",
     description: "An extraordinary discovery—capturing the rare black-furred wolf pups thriving in the wild was a breathtaking experience.",
-    image: "/wolf_puppies.jpg",
+            image: "/kuno/wolf_puppies.jpg",
   },
   {
     title: "Rare Melanistic Jungle Cat Captured in Kuno",
     description: "A remarkable discovery of this elusive, dark-coated jungle cat reveals the hidden marvels of India's forests.",
-    image: "/jungle_cat.jpg",
+            image: "/kuno/jungle_cat.jpg",
   },
    {
     title: "Indian Rock Python Hatchlings Spotted",
     description: "A rare glimpse of hatchlings emerging—offering a powerful reminder of nature's delicate balance and the wonder of new life.",
-    image: "/rock_python.jpg",
+            image: "/kuno/rock_python.jpg",
   },
 ];
 
