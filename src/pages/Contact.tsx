@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import SectionHeading from '../components/ui/SectionHeading';
+import SEOHead from '../components/ui/SEOHead';
 
 interface ContactFormData {
   name: string;
@@ -16,7 +17,7 @@ interface ContactFormData {
 const Contact = () => {
   useEffect(() => {
     // Update page title
-    document.title = 'Contact Us | Nivedya';
+    document.title = 'Contact Us | Kuno National Park Safari';
   }, []);
 
   const { 
@@ -36,6 +37,14 @@ const Contact = () => {
 
   return (
     <>
+      <SEOHead
+        title="Contact Us"
+        description="Get in touch with us to book your Kuno National Park safari adventure. Contact our expert team for safari packages, wildlife photography tours, and conservation experiences."
+        keywords="Contact Kuno Safari, Safari Booking, Wildlife Tour Contact, Safari Packages, Photography Safari, Conservation Tours"
+        canonical="https://kunosafari.com/contact"
+        ogImage="/cheetah.jpg"
+        ogType="website"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
         <div className="container">

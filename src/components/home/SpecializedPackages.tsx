@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import SectionHeading from '../ui/SectionHeading';
 import { Link } from 'react-router-dom';
+import ResponsiveImage from '../ui/ResponsiveImage';
 import { useRef } from 'react';
 
 interface PackageCardProps {
@@ -20,9 +21,11 @@ const PackageCard = ({ imageUrl, title, description, delay }: PackageCardProps) 
       className="card p-6 flex flex-col items-center h-full"
     >
      <div className="flex flex-1 items-center justify-center">
-        <img
+        <ResponsiveImage
           src={imageUrl}
-          alt="Kuno National Park"
+          alt={`${title} Safari Package`}
+          className="w-full h-48 object-cover rounded-t-lg"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 350px, 340px"
         />
       </div>
       <h3 className="text-xl font-semibold mb-2 ">{title}</h3>
@@ -63,17 +66,17 @@ const PackageCard = ({ imageUrl, title, description, delay }: PackageCardProps) 
 const PackagesSection = () => {
   const packages = [
     {
-        imageUrl: 'src/public/FAMILY.jpg',
+        imageUrl: '/FAMILY.jpg',
         title: 'Family',
         description: 'Customized photo-focused itineraries, On-field photography tips and hacks, Dedicated expert guide and driver, Post-processing session after safari'
     },
    {
-        imageUrl: 'src/public/PHOTOGRAPHERS.jpg',
+        imageUrl: '/PHOTOGRAPHERS.jpg',
         title: 'Photographers',
         description: 'Customized best jungle experiences, Expert guide and family driver, Diverse outdoor activities, Detailed Kuno history sessions'
     },
    {
-        imageUrl: 'src/public/COUPLE.jpg',
+        imageUrl: '/COUPLE.jpg',
         title: 'Couples',
         description: 'Romantic, customized itineraries, Expert guide and private driver, Luxury, intimate accommodations, Serene nature walks'
     }

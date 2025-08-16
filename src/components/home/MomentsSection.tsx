@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import SectionHeading from '../ui/SectionHeading';
+import ResponsiveImage from '../ui/ResponsiveImage';
 
 const MomentsSection = () => {
 
   const images = [
-    'src/public/cheetah.jpg',
-    'src/public/leopard.jpg',
-    'src/public/hyena.jpg',
-    'src/public/cat.jpg',
-    'src/public/bear.jpg',
+    '/cheetah.jpg',
+    '/leopard.jpg',
+    '/hyena.jpg',
+    '/cat.jpg',
+    '/bear.jpg',
   ];
 
   
@@ -21,10 +22,11 @@ const MomentsSection = () => {
         <div className="relative flex flex-col lg:flex-row items-center justify-center gap-10 mt-16">
           {/* Image Column */}
           <div className="flex-[3] w-full max-w-5xl relative">
-            <img
-            src="src/public/overlay1.jpg" // Place your image in public/ and use the correct path
+            <ResponsiveImage
+            src="/overlay1.jpg" // Place your image in public/ and use the correct path
               alt="Kuno National Park Moment"
               className="w-full h-[450px] object-cover shadow-lg"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 800px"
             />
             {/* Box overlays image on mobile */}
             <div
@@ -92,10 +94,11 @@ const MomentsSection = () => {
   </div>
   {/* Image Column */}
   <div className="flex-[3] w-full max-w-5xl relative">
-    <img
-      src="src/public/overlay2.jpg" // Place your image in public/ and use the correct path
+    <ResponsiveImage
+      src="/overlay2.jpg" // Place your image in public/ and use the correct path
       alt="Kuno National Park Moment"
       className="w-full h-[450px] object-cover shadow-lg"
+      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 800px"
     />
     {/* Box overlays image on mobile */}
     <div

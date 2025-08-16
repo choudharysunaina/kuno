@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
+import ResponsiveImage from '../ui/ResponsiveImage';
 
 const images = [
-  'src/public/GALLERY/bear.jpg',
-  'src/public/GALLERY/cat.jpg',
-  'src/public/GALLERY/cheetah.jpg',
-  'src/public/GALLERY/COUPLE.jpg',
-  'src/public/GALLERY/FAMILY.jpg',
-   'src/public/GALLERY/feature_1.jpg',
-  'src/public/GALLERY/cheetah.jpg',
-    'src/public/GALLERY/cheetah.jpg',
-    'src/public/GALLERY/cheetah.jpg'
+  '/GALLERY/bear.jpg',
+  '/GALLERY/cat.jpg',
+  '/GALLERY/cheetah.jpg',
+  '/GALLERY/COUPLE.jpg',
+  '/GALLERY/FAMILY.jpg',
+   '/GALLERY/feature_1.jpg',
+  '/GALLERY/cheetah.jpg',
+    '/GALLERY/cheetah.jpg',
+    '/GALLERY/cheetah.jpg'
   // Add more images with different aspect ratios and sizes in your public folder
 ];
 
@@ -39,10 +40,11 @@ const RalphWenigGallery = () => {
               className="mb-6 break-inside-avoid cursor-pointer group relative overflow-hidden shadow-lg"
               onClick={() => openModal(img)}
             >
-              <img
+              <ResponsiveImage
                 src={img}
-                alt={`Artwork ${idx + 1}`}
+                alt={`Kuno Wildlife ${idx + 1}`}
                 className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-105 max-w-[1000px] mx-auto"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition" />
             </div>
@@ -56,11 +58,12 @@ const RalphWenigGallery = () => {
           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
           onClick={closeModal}
         >
-          <img
+          <ResponsiveImage
             src={modalImg}
-            alt="Large artwork"
+            alt="Large wildlife image"
             className="max-h-[80vh] max-w-[90vw] shadow-2xl"
-            onClick={e => e.stopPropagation()}
+            sizes="90vw"
+            priority={true}
           />
           <button
             className="absolute top-8 right-8 text-white text-3xl font-bold"

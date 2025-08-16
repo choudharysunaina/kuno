@@ -1,13 +1,14 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import ResponsiveImage from '../ui/ResponsiveImage';
 
 const HeroSection = () => {
   return (
      <section className="relative min-h-[100vh] flex items-center overflow-hidden">
       {/* Background GIF */}
       <img
-        src="src/public/home_background_74.gif"
+        src="/home_background_74.gif"
         alt="Safari Background"
         className="absolute inset-0 w-full h-full object-cover z-0"
         style={{ pointerEvents: "none" }}
