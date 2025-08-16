@@ -12,11 +12,11 @@ interface SurpriseCardProps {
 
 
   const images = [
-    'src/public/cheetah.jpg',
-    'src/public/leopard.jpg',
-    'src/public/hyena.jpg',
-    'src/public/cat.jpg',
-    'src/public/bear.jpg',
+      '/cheetah.jpg',
+  '/leopard.jpg',
+  '/hyena.jpg',
+  '/cat.jpg',
+  '/bear.jpg',
   ];
 
 const SurpriseSection = () => {

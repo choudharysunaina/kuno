@@ -22,7 +22,7 @@ const MoreInfo = () => {
       {/* Image Section */}
       <div className="flex flex-1 items-center justify-center">
         <img
-          src="src/public/more_info.jpg"
+          src="/more_info.jpg"
           alt="Kuno National Park"
          
           className="rounded-tl-3xl rounded-bl-3xl shadow-lg object-cover w-full"

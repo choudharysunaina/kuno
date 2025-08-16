@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
 const images = [
-  'src/public/GALLERY/bear.jpg',
-  'src/public/GALLERY/cat.jpg',
-  'src/public/GALLERY/cheetah.jpg',
-  'src/public/GALLERY/COUPLE.jpg',
-  'src/public/GALLERY/FAMILY.jpg',
-   'src/public/GALLERY/feature_1.jpg',
-  'src/public/GALLERY/cheetah.jpg',
-    'src/public/GALLERY/cheetah.jpg',
-    'src/public/GALLERY/cheetah.jpg'
+  '/GALLERY/bear.jpg',
+  '/GALLERY/cat.jpg',
+  '/GALLERY/cheetah.jpg',
+  '/GALLERY/COUPLE.jpg',
+  '/GALLERY/FAMILY.jpg',
+   '/GALLERY/feature_1.jpg',
+  '/GALLERY/cheetah.jpg',
+    '/GALLERY/cheetah.jpg',
+    '/GALLERY/cheetah.jpg'
   // Add more images with different aspect ratios and sizes in your public folder
 ];
 

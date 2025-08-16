@@ -7,4 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  base: "/kuno/",   // 👈 This fixes GitHub Pages asset paths
 });
